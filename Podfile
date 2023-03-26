@@ -6,6 +6,15 @@ target 'WeatherApp' do
   use_frameworks!
 
   # Pods for WeatherApp
+  pod 'MBProgressHUD'
+  pod 'Kingfisher'
+  pod 'IQKeyboardManagerSwift'
+  pod 'Alamofire'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'Swinject'
+  pod 'SwinjectAutoregistration'
+  pod 'DropDown'
 
   target 'WeatherAppTests' do
     inherit! :search_paths
