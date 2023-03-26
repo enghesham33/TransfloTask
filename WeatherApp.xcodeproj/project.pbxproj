@@ -16,6 +16,30 @@
 		0099E31F29D0359A001B3150 /* WeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E31E29D0359A001B3150 /* WeatherAppTests.swift */; };
 		0099E32929D0359A001B3150 /* WeatherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E32829D0359A001B3150 /* WeatherAppUITests.swift */; };
 		0099E32B29D0359A001B3150 /* WeatherAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E32A29D0359A001B3150 /* WeatherAppUITestsLaunchTests.swift */; };
+		0099E34129D038BA001B3150 /* RegisterUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E33D29D038BA001B3150 /* RegisterUseCases.swift */; };
+		0099E34229D038BA001B3150 /* RegisterDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E33E29D038BA001B3150 /* RegisterDependencies.swift */; };
+		0099E34329D038BA001B3150 /* RegisterViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E33F29D038BA001B3150 /* RegisterViewModels.swift */; };
+		0099E34429D038BA001B3150 /* RegisterRepositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E34029D038BA001B3150 /* RegisterRepositories.swift */; };
+		0099E34629D03CD4001B3150 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E34529D03CD4001B3150 /* UIViewController+Extensions.swift */; };
+		0099E34A29D03D51001B3150 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E34929D03D51001B3150 /* Route.swift */; };
+		0099E34C29D03DDD001B3150 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E34B29D03DDD001B3150 /* ActivityIndicator.swift */; };
+		0099E34F29D03E2D001B3150 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E34E29D03E2D001B3150 /* UIColor+Extensions.swift */; };
+		0099E35329D03F58001B3150 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E35129D03F58001B3150 /* DashboardViewController.swift */; };
+		0099E35429D03F58001B3150 /* DashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0099E35229D03F58001B3150 /* DashboardViewController.xib */; };
+		0099E35629D03FFD001B3150 /* AppDelegate+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E35529D03FFD001B3150 /* AppDelegate+Location.swift */; };
+		0099E35929D04161001B3150 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E35829D04161001B3150 /* Defaults.swift */; };
+		0099E35B29D04188001B3150 /* StoredDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E35A29D04188001B3150 /* StoredDefaults.swift */; };
+		0099E35D29D041B2001B3150 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E35C29D041B2001B3150 /* Constants.swift */; };
+		0099E36029D04276001B3150 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E35F29D04276001B3150 /* Helper.swift */; };
+		0099E36329D042EF001B3150 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E36229D042EF001B3150 /* RealmManager.swift */; };
+		0099E36529D0443C001B3150 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E36429D0443C001B3150 /* BaseViewController.swift */; };
+		0099E36729D044EE001B3150 /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E36629D044EE001B3150 /* UINavigationController+Extensions.swift */; };
+		0099E36A29D04865001B3150 /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E36929D04865001B3150 /* APIEndpoints.swift */; };
+		0099E36C29D04871001B3150 /* RemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E36B29D04871001B3150 /* RemoteDataSource.swift */; };
+		0099E36E29D04962001B3150 /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E36D29D04962001B3150 /* NetworkConfig.swift */; };
+		0099E37029D04AC1001B3150 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E36F29D04AC1001B3150 /* AppError.swift */; };
+		0099E37229D04AD0001B3150 /* AppResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E37129D04AD0001B3150 /* AppResult.swift */; };
+		0099E37429D04ADD001B3150 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E37329D04ADD001B3150 /* EndPoint.swift */; };
 		5F9E52E851372BE514C85885 /* Pods_WeatherAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C57E1027D13DFC7AD7F839A /* Pods_WeatherAppTests.framework */; };
 		C15E4C570CCA2D9990469795 /* Pods_WeatherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3F3573A3649D126C2068FCE /* Pods_WeatherApp.framework */; };
 		FCD22C6F400DE42D9FD1BFD8 /* Pods_WeatherApp_WeatherAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C47B730CF3F68613E36561 /* Pods_WeatherApp_WeatherAppUITests.framework */; };
@@ -52,6 +76,30 @@
 		0099E32429D0359A001B3150 /* WeatherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0099E32829D0359A001B3150 /* WeatherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppUITests.swift; sourceTree = "<group>"; };
 		0099E32A29D0359A001B3150 /* WeatherAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0099E33D29D038BA001B3150 /* RegisterUseCases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterUseCases.swift; sourceTree = "<group>"; };
+		0099E33E29D038BA001B3150 /* RegisterDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterDependencies.swift; sourceTree = "<group>"; };
+		0099E33F29D038BA001B3150 /* RegisterViewModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewModels.swift; sourceTree = "<group>"; };
+		0099E34029D038BA001B3150 /* RegisterRepositories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterRepositories.swift; sourceTree = "<group>"; };
+		0099E34529D03CD4001B3150 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		0099E34929D03D51001B3150 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		0099E34B29D03DDD001B3150 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		0099E34E29D03E2D001B3150 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		0099E35129D03F58001B3150 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		0099E35229D03F58001B3150 /* DashboardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardViewController.xib; sourceTree = "<group>"; };
+		0099E35529D03FFD001B3150 /* AppDelegate+Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Location.swift"; sourceTree = "<group>"; };
+		0099E35829D04161001B3150 /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		0099E35A29D04188001B3150 /* StoredDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredDefaults.swift; sourceTree = "<group>"; };
+		0099E35C29D041B2001B3150 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0099E35F29D04276001B3150 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		0099E36229D042EF001B3150 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		0099E36429D0443C001B3150 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		0099E36629D044EE001B3150 /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
+		0099E36929D04865001B3150 /* APIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
+		0099E36B29D04871001B3150 /* RemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSource.swift; sourceTree = "<group>"; };
+		0099E36D29D04962001B3150 /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
+		0099E36F29D04AC1001B3150 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		0099E37129D04AD0001B3150 /* AppResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppResult.swift; sourceTree = "<group>"; };
+		0099E37329D04ADD001B3150 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		1E34966BD9EA62DC9E238654 /* Pods-WeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp.release.xcconfig"; path = "Target Support Files/Pods-WeatherApp/Pods-WeatherApp.release.xcconfig"; sourceTree = "<group>"; };
 		366BF674F35EE73FF41E07D2 /* Pods-WeatherAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherAppTests.release.xcconfig"; path = "Target Support Files/Pods-WeatherAppTests/Pods-WeatherAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		6A80EB6E4751CDBB578AE06E /* Pods-WeatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp.debug.xcconfig"; path = "Target Support Files/Pods-WeatherApp/Pods-WeatherApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +164,11 @@
 		0099E30629D03597001B3150 /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				0099E33729D037E4001B3150 /* DI */,
+				0099E33829D037EB001B3150 /* Presentation */,
+				0099E33929D037F9001B3150 /* Domain */,
+				0099E33A29D03805001B3150 /* Data */,
+				0099E33C29D03810001B3150 /* Utils */,
 				0099E30729D03597001B3150 /* AppDelegate.swift */,
 				0099E30929D03597001B3150 /* SceneDelegate.swift */,
 				0099E30B29D03597001B3150 /* ViewController.swift */,
@@ -144,6 +197,161 @@
 			path = WeatherAppUITests;
 			sourceTree = "<group>";
 		};
+		0099E33729D037E4001B3150 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				0099E33E29D038BA001B3150 /* RegisterDependencies.swift */,
+				0099E34029D038BA001B3150 /* RegisterRepositories.swift */,
+				0099E33D29D038BA001B3150 /* RegisterUseCases.swift */,
+				0099E33F29D038BA001B3150 /* RegisterViewModels.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		0099E33829D037EB001B3150 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				0099E34829D03D41001B3150 /* Modules */,
+				0099E34729D03D39001B3150 /* Components */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		0099E33929D037F9001B3150 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				0099E37529D04BA8001B3150 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		0099E33A29D03805001B3150 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0099E37A29D04E64001B3150 /* DataMapping */,
+				0099E37929D04E4D001B3150 /* Repositories */,
+				0099E36129D042C3001B3150 /* Realm */,
+				0099E36829D04855001B3150 /* API */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0099E33C29D03810001B3150 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0099E35E29D04268001B3150 /* Helpers */,
+				0099E35729D04154001B3150 /* UserDefaults */,
+				0099E34D29D03E1C001B3150 /* Extensions */,
+				0099E34B29D03DDD001B3150 /* ActivityIndicator.swift */,
+				0099E35C29D041B2001B3150 /* Constants.swift */,
+				0099E36429D0443C001B3150 /* BaseViewController.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0099E34729D03D39001B3150 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0099E34929D03D51001B3150 /* Route.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0099E34829D03D41001B3150 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				0099E35029D03F3B001B3150 /* DashboardScreen */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		0099E34D29D03E1C001B3150 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0099E34529D03CD4001B3150 /* UIViewController+Extensions.swift */,
+				0099E34E29D03E2D001B3150 /* UIColor+Extensions.swift */,
+				0099E35529D03FFD001B3150 /* AppDelegate+Location.swift */,
+				0099E36629D044EE001B3150 /* UINavigationController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0099E35029D03F3B001B3150 /* DashboardScreen */ = {
+			isa = PBXGroup;
+			children = (
+				0099E35129D03F58001B3150 /* DashboardViewController.swift */,
+				0099E35229D03F58001B3150 /* DashboardViewController.xib */,
+			);
+			path = DashboardScreen;
+			sourceTree = "<group>";
+		};
+		0099E35729D04154001B3150 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				0099E35829D04161001B3150 /* Defaults.swift */,
+				0099E35A29D04188001B3150 /* StoredDefaults.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		0099E35E29D04268001B3150 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0099E35F29D04276001B3150 /* Helper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0099E36129D042C3001B3150 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				0099E36229D042EF001B3150 /* RealmManager.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		0099E36829D04855001B3150 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				0099E36D29D04962001B3150 /* NetworkConfig.swift */,
+				0099E36929D04865001B3150 /* APIEndpoints.swift */,
+				0099E36B29D04871001B3150 /* RemoteDataSource.swift */,
+				0099E36F29D04AC1001B3150 /* AppError.swift */,
+				0099E37129D04AD0001B3150 /* AppResult.swift */,
+				0099E37329D04ADD001B3150 /* EndPoint.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		0099E37529D04BA8001B3150 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				0099E37629D04BB3001B3150 /* APIModels */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		0099E37629D04BB3001B3150 /* APIModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = APIModels;
+			sourceTree = "<group>";
+		};
+		0099E37929D04E4D001B3150 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		0099E37A29D04E64001B3150 /* DataMapping */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataMapping;
+			sourceTree = "<group>";
+		};
 		2DFED9D5A6C47F8AD7737F3F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,7 +362,6 @@
 				79BCB7E3DB64EC1B92D8F677 /* Pods-WeatherAppTests.debug.xcconfig */,
 				366BF674F35EE73FF41E07D2 /* Pods-WeatherAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -280,6 +487,7 @@
 				0099E31429D03599001B3150 /* LaunchScreen.storyboard in Resources */,
 				0099E31129D03599001B3150 /* Assets.xcassets in Resources */,
 				0099E30F29D03597001B3150 /* Main.storyboard in Resources */,
+				0099E35429D03F58001B3150 /* DashboardViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,9 +615,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0099E37429D04ADD001B3150 /* EndPoint.swift in Sources */,
+				0099E35629D03FFD001B3150 /* AppDelegate+Location.swift in Sources */,
+				0099E35929D04161001B3150 /* Defaults.swift in Sources */,
+				0099E36C29D04871001B3150 /* RemoteDataSource.swift in Sources */,
+				0099E34A29D03D51001B3150 /* Route.swift in Sources */,
+				0099E36E29D04962001B3150 /* NetworkConfig.swift in Sources */,
+				0099E36729D044EE001B3150 /* UINavigationController+Extensions.swift in Sources */,
 				0099E30C29D03597001B3150 /* ViewController.swift in Sources */,
+				0099E36529D0443C001B3150 /* BaseViewController.swift in Sources */,
+				0099E34229D038BA001B3150 /* RegisterDependencies.swift in Sources */,
+				0099E36329D042EF001B3150 /* RealmManager.swift in Sources */,
+				0099E34429D038BA001B3150 /* RegisterRepositories.swift in Sources */,
 				0099E30829D03597001B3150 /* AppDelegate.swift in Sources */,
+				0099E35D29D041B2001B3150 /* Constants.swift in Sources */,
+				0099E36029D04276001B3150 /* Helper.swift in Sources */,
+				0099E34629D03CD4001B3150 /* UIViewController+Extensions.swift in Sources */,
+				0099E34C29D03DDD001B3150 /* ActivityIndicator.swift in Sources */,
+				0099E35329D03F58001B3150 /* DashboardViewController.swift in Sources */,
+				0099E36A29D04865001B3150 /* APIEndpoints.swift in Sources */,
+				0099E34329D038BA001B3150 /* RegisterViewModels.swift in Sources */,
+				0099E34F29D03E2D001B3150 /* UIColor+Extensions.swift in Sources */,
+				0099E37029D04AC1001B3150 /* AppError.swift in Sources */,
+				0099E34129D038BA001B3150 /* RegisterUseCases.swift in Sources */,
 				0099E30A29D03597001B3150 /* SceneDelegate.swift in Sources */,
+				0099E37229D04AD0001B3150 /* AppResult.swift in Sources */,
+				0099E35B29D04188001B3150 /* StoredDefaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
