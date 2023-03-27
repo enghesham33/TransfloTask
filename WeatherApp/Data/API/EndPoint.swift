@@ -132,7 +132,9 @@ extension Requestable {
         urlRequest.httpMethod = method.rawValue
         urlRequest.allHTTPHeaderFields = allHeaders
         
-        
+        print("url :: \(url.absoluteString)")
+        print("-----------------------------------")
+        print("headers :: \(allHeaders)")
        
         return (urlRequest,bodyParamaters)
     }

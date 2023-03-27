@@ -11,7 +11,9 @@ import SwinjectAutoregistration
 extension Container {
     
     func registerUseCases() {
-//        autoregister(AuthUseCase.self, initializer: DefaultAuthUseCase.init)
+        autoregister(ForecastUseCase.self, initializer: ForecastUseCaseImpl.init)
+        autoregister(CurrentWeatherUseCase.self, initializer: CurrentWeatherUseCaseImpl.init)
+        autoregister(GeocodingUseCase.self, initializer: GeocodingUseCaseImpl.init)
 
     }
 }

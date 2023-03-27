@@ -40,6 +40,26 @@
 		0099E37029D04AC1001B3150 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E36F29D04AC1001B3150 /* AppError.swift */; };
 		0099E37229D04AD0001B3150 /* AppResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E37129D04AD0001B3150 /* AppResult.swift */; };
 		0099E37429D04ADD001B3150 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E37329D04ADD001B3150 /* EndPoint.swift */; };
+		0099E37C29D0580A001B3150 /* SearchedLocationRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E37B29D0580A001B3150 /* SearchedLocationRealm.swift */; };
+		0099E37F29D05C01001B3150 /* ForecastResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E37E29D05C01001B3150 /* ForecastResponse.swift */; };
+		0099E38129D05C0F001B3150 /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E38029D05C0F001B3150 /* WeatherResponse.swift */; };
+		0099E38929D06510001B3150 /* WeatherDataRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E38829D06510001B3150 /* WeatherDataRealm.swift */; };
+		0099E38B29D06742001B3150 /* ForecastRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E38A29D06742001B3150 /* ForecastRepository.swift */; };
+		0099E38D29D06750001B3150 /* CurrentWeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E38C29D06750001B3150 /* CurrentWeatherRepository.swift */; };
+		0099E38F29D0675E001B3150 /* GeocodingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E38E29D0675E001B3150 /* GeocodingRepository.swift */; };
+		0099E39129D0682A001B3150 /* ForecastRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E39029D0682A001B3150 /* ForecastRepositoryImpl.swift */; };
+		0099E39329D0684A001B3150 /* CurrentWeatherRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E39229D0684A001B3150 /* CurrentWeatherRepositoryImpl.swift */; };
+		0099E39529D06867001B3150 /* GeocodingRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E39429D06867001B3150 /* GeocodingRepositoryImpl.swift */; };
+		0099E39729D06898001B3150 /* GeocodingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E39629D06898001B3150 /* GeocodingResponse.swift */; };
+		0099E39929D069C3001B3150 /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E39829D069C3001B3150 /* BaseRepository.swift */; };
+		0099E39B29D07884001B3150 /* ForecastUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E39A29D07884001B3150 /* ForecastUseCase.swift */; };
+		0099E39D29D0788E001B3150 /* CurrentWeatherUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E39C29D0788E001B3150 /* CurrentWeatherUseCase.swift */; };
+		0099E39F29D0789B001B3150 /* GeocodingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E39E29D0789B001B3150 /* GeocodingUseCase.swift */; };
+		0099E3A129D07D46001B3150 /* ForecastUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E3A029D07D46001B3150 /* ForecastUseCaseImpl.swift */; };
+		0099E3A329D07D65001B3150 /* CurrentWeatherUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E3A229D07D65001B3150 /* CurrentWeatherUseCaseImpl.swift */; };
+		0099E3A529D07D97001B3150 /* GeocodingUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099E3A429D07D97001B3150 /* GeocodingUseCaseImpl.swift */; };
+		00A83B8129D1BBB4007F9C10 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A83B8029D1BBB4007F9C10 /* DashboardViewModel.swift */; };
+		00A83B8329D1BBD6007F9C10 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A83B8229D1BBD6007F9C10 /* BaseViewModel.swift */; };
 		5F9E52E851372BE514C85885 /* Pods_WeatherAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C57E1027D13DFC7AD7F839A /* Pods_WeatherAppTests.framework */; };
 		C15E4C570CCA2D9990469795 /* Pods_WeatherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3F3573A3649D126C2068FCE /* Pods_WeatherApp.framework */; };
 		FCD22C6F400DE42D9FD1BFD8 /* Pods_WeatherApp_WeatherAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C47B730CF3F68613E36561 /* Pods_WeatherApp_WeatherAppUITests.framework */; };
@@ -100,6 +120,26 @@
 		0099E36F29D04AC1001B3150 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		0099E37129D04AD0001B3150 /* AppResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppResult.swift; sourceTree = "<group>"; };
 		0099E37329D04ADD001B3150 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		0099E37B29D0580A001B3150 /* SearchedLocationRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchedLocationRealm.swift; sourceTree = "<group>"; };
+		0099E37E29D05C01001B3150 /* ForecastResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastResponse.swift; sourceTree = "<group>"; };
+		0099E38029D05C0F001B3150 /* WeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
+		0099E38829D06510001B3150 /* WeatherDataRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataRealm.swift; sourceTree = "<group>"; };
+		0099E38A29D06742001B3150 /* ForecastRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastRepository.swift; sourceTree = "<group>"; };
+		0099E38C29D06750001B3150 /* CurrentWeatherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherRepository.swift; sourceTree = "<group>"; };
+		0099E38E29D0675E001B3150 /* GeocodingRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodingRepository.swift; sourceTree = "<group>"; };
+		0099E39029D0682A001B3150 /* ForecastRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastRepositoryImpl.swift; sourceTree = "<group>"; };
+		0099E39229D0684A001B3150 /* CurrentWeatherRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherRepositoryImpl.swift; sourceTree = "<group>"; };
+		0099E39429D06867001B3150 /* GeocodingRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodingRepositoryImpl.swift; sourceTree = "<group>"; };
+		0099E39629D06898001B3150 /* GeocodingResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodingResponse.swift; sourceTree = "<group>"; };
+		0099E39829D069C3001B3150 /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
+		0099E39A29D07884001B3150 /* ForecastUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastUseCase.swift; sourceTree = "<group>"; };
+		0099E39C29D0788E001B3150 /* CurrentWeatherUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherUseCase.swift; sourceTree = "<group>"; };
+		0099E39E29D0789B001B3150 /* GeocodingUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodingUseCase.swift; sourceTree = "<group>"; };
+		0099E3A029D07D46001B3150 /* ForecastUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastUseCaseImpl.swift; sourceTree = "<group>"; };
+		0099E3A229D07D65001B3150 /* CurrentWeatherUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherUseCaseImpl.swift; sourceTree = "<group>"; };
+		0099E3A429D07D97001B3150 /* GeocodingUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodingUseCaseImpl.swift; sourceTree = "<group>"; };
+		00A83B8029D1BBB4007F9C10 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		00A83B8229D1BBD6007F9C10 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		1E34966BD9EA62DC9E238654 /* Pods-WeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp.release.xcconfig"; path = "Target Support Files/Pods-WeatherApp/Pods-WeatherApp.release.xcconfig"; sourceTree = "<group>"; };
 		366BF674F35EE73FF41E07D2 /* Pods-WeatherAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherAppTests.release.xcconfig"; path = "Target Support Files/Pods-WeatherAppTests/Pods-WeatherAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		6A80EB6E4751CDBB578AE06E /* Pods-WeatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp.debug.xcconfig"; path = "Target Support Files/Pods-WeatherApp/Pods-WeatherApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -220,6 +260,7 @@
 		0099E33929D037F9001B3150 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				0099E38429D06439001B3150 /* Protocols */,
 				0099E37529D04BA8001B3150 /* Entities */,
 			);
 			path = Domain;
@@ -228,7 +269,7 @@
 		0099E33A29D03805001B3150 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				0099E37A29D04E64001B3150 /* DataMapping */,
+				0099E38729D06464001B3150 /* UseCases */,
 				0099E37929D04E4D001B3150 /* Repositories */,
 				0099E36129D042C3001B3150 /* Realm */,
 				0099E36829D04855001B3150 /* API */,
@@ -245,6 +286,7 @@
 				0099E34B29D03DDD001B3150 /* ActivityIndicator.swift */,
 				0099E35C29D041B2001B3150 /* Constants.swift */,
 				0099E36429D0443C001B3150 /* BaseViewController.swift */,
+				00A83B8229D1BBD6007F9C10 /* BaseViewModel.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -260,6 +302,7 @@
 		0099E34829D03D41001B3150 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				00A83B8429D1E8F8007F9C10 /* ForecastScreen */,
 				0099E35029D03F3B001B3150 /* DashboardScreen */,
 			);
 			path = Modules;
@@ -281,6 +324,7 @@
 			children = (
 				0099E35129D03F58001B3150 /* DashboardViewController.swift */,
 				0099E35229D03F58001B3150 /* DashboardViewController.xib */,
+				00A83B8029D1BBB4007F9C10 /* DashboardViewModel.swift */,
 			);
 			path = DashboardScreen;
 			sourceTree = "<group>";
@@ -316,8 +360,6 @@
 				0099E36D29D04962001B3150 /* NetworkConfig.swift */,
 				0099E36929D04865001B3150 /* APIEndpoints.swift */,
 				0099E36B29D04871001B3150 /* RemoteDataSource.swift */,
-				0099E36F29D04AC1001B3150 /* AppError.swift */,
-				0099E37129D04AD0001B3150 /* AppResult.swift */,
 				0099E37329D04ADD001B3150 /* EndPoint.swift */,
 			);
 			path = API;
@@ -326,6 +368,7 @@
 		0099E37529D04BA8001B3150 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				0099E37D29D05888001B3150 /* RealmModels */,
 				0099E37629D04BB3001B3150 /* APIModels */,
 			);
 			path = Entities;
@@ -334,6 +377,11 @@
 		0099E37629D04BB3001B3150 /* APIModels */ = {
 			isa = PBXGroup;
 			children = (
+				0099E36F29D04AC1001B3150 /* AppError.swift */,
+				0099E37129D04AD0001B3150 /* AppResult.swift */,
+				0099E37E29D05C01001B3150 /* ForecastResponse.swift */,
+				0099E38029D05C0F001B3150 /* WeatherResponse.swift */,
+				0099E39629D06898001B3150 /* GeocodingResponse.swift */,
 			);
 			path = APIModels;
 			sourceTree = "<group>";
@@ -341,15 +389,67 @@
 		0099E37929D04E4D001B3150 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				0099E39829D069C3001B3150 /* BaseRepository.swift */,
+				0099E39029D0682A001B3150 /* ForecastRepositoryImpl.swift */,
+				0099E39229D0684A001B3150 /* CurrentWeatherRepositoryImpl.swift */,
+				0099E39429D06867001B3150 /* GeocodingRepositoryImpl.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
 		};
-		0099E37A29D04E64001B3150 /* DataMapping */ = {
+		0099E37D29D05888001B3150 /* RealmModels */ = {
+			isa = PBXGroup;
+			children = (
+				0099E37B29D0580A001B3150 /* SearchedLocationRealm.swift */,
+				0099E38829D06510001B3150 /* WeatherDataRealm.swift */,
+			);
+			path = RealmModels;
+			sourceTree = "<group>";
+		};
+		0099E38429D06439001B3150 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0099E38629D06448001B3150 /* UseCases */,
+				0099E38529D0643F001B3150 /* Repositories */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		0099E38529D0643F001B3150 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				0099E38A29D06742001B3150 /* ForecastRepository.swift */,
+				0099E38C29D06750001B3150 /* CurrentWeatherRepository.swift */,
+				0099E38E29D0675E001B3150 /* GeocodingRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		0099E38629D06448001B3150 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				0099E39A29D07884001B3150 /* ForecastUseCase.swift */,
+				0099E39C29D0788E001B3150 /* CurrentWeatherUseCase.swift */,
+				0099E39E29D0789B001B3150 /* GeocodingUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		0099E38729D06464001B3150 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				0099E3A029D07D46001B3150 /* ForecastUseCaseImpl.swift */,
+				0099E3A229D07D65001B3150 /* CurrentWeatherUseCaseImpl.swift */,
+				0099E3A429D07D97001B3150 /* GeocodingUseCaseImpl.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		00A83B8429D1E8F8007F9C10 /* ForecastScreen */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = DataMapping;
+			path = ForecastScreen;
 			sourceTree = "<group>";
 		};
 		2DFED9D5A6C47F8AD7737F3F /* Pods */ = {
@@ -616,6 +716,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0099E37429D04ADD001B3150 /* EndPoint.swift in Sources */,
+				0099E38B29D06742001B3150 /* ForecastRepository.swift in Sources */,
 				0099E35629D03FFD001B3150 /* AppDelegate+Location.swift in Sources */,
 				0099E35929D04161001B3150 /* Defaults.swift in Sources */,
 				0099E36C29D04871001B3150 /* RemoteDataSource.swift in Sources */,
@@ -626,20 +727,39 @@
 				0099E36529D0443C001B3150 /* BaseViewController.swift in Sources */,
 				0099E34229D038BA001B3150 /* RegisterDependencies.swift in Sources */,
 				0099E36329D042EF001B3150 /* RealmManager.swift in Sources */,
+				0099E38D29D06750001B3150 /* CurrentWeatherRepository.swift in Sources */,
+				0099E39529D06867001B3150 /* GeocodingRepositoryImpl.swift in Sources */,
 				0099E34429D038BA001B3150 /* RegisterRepositories.swift in Sources */,
 				0099E30829D03597001B3150 /* AppDelegate.swift in Sources */,
 				0099E35D29D041B2001B3150 /* Constants.swift in Sources */,
 				0099E36029D04276001B3150 /* Helper.swift in Sources */,
 				0099E34629D03CD4001B3150 /* UIViewController+Extensions.swift in Sources */,
+				0099E39329D0684A001B3150 /* CurrentWeatherRepositoryImpl.swift in Sources */,
+				0099E39129D0682A001B3150 /* ForecastRepositoryImpl.swift in Sources */,
+				00A83B8129D1BBB4007F9C10 /* DashboardViewModel.swift in Sources */,
 				0099E34C29D03DDD001B3150 /* ActivityIndicator.swift in Sources */,
+				0099E37C29D0580A001B3150 /* SearchedLocationRealm.swift in Sources */,
 				0099E35329D03F58001B3150 /* DashboardViewController.swift in Sources */,
+				0099E37F29D05C01001B3150 /* ForecastResponse.swift in Sources */,
+				0099E38929D06510001B3150 /* WeatherDataRealm.swift in Sources */,
 				0099E36A29D04865001B3150 /* APIEndpoints.swift in Sources */,
+				0099E3A529D07D97001B3150 /* GeocodingUseCaseImpl.swift in Sources */,
+				0099E38129D05C0F001B3150 /* WeatherResponse.swift in Sources */,
+				0099E39F29D0789B001B3150 /* GeocodingUseCase.swift in Sources */,
 				0099E34329D038BA001B3150 /* RegisterViewModels.swift in Sources */,
 				0099E34F29D03E2D001B3150 /* UIColor+Extensions.swift in Sources */,
 				0099E37029D04AC1001B3150 /* AppError.swift in Sources */,
+				0099E39B29D07884001B3150 /* ForecastUseCase.swift in Sources */,
+				0099E38F29D0675E001B3150 /* GeocodingRepository.swift in Sources */,
+				0099E39729D06898001B3150 /* GeocodingResponse.swift in Sources */,
+				00A83B8329D1BBD6007F9C10 /* BaseViewModel.swift in Sources */,
+				0099E3A329D07D65001B3150 /* CurrentWeatherUseCaseImpl.swift in Sources */,
+				0099E39D29D0788E001B3150 /* CurrentWeatherUseCase.swift in Sources */,
+				0099E3A129D07D46001B3150 /* ForecastUseCaseImpl.swift in Sources */,
 				0099E34129D038BA001B3150 /* RegisterUseCases.swift in Sources */,
 				0099E30A29D03597001B3150 /* SceneDelegate.swift in Sources */,
 				0099E37229D04AD0001B3150 /* AppResult.swift in Sources */,
+				0099E39929D069C3001B3150 /* BaseRepository.swift in Sources */,
 				0099E35B29D04188001B3150 /* StoredDefaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

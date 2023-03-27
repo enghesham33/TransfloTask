@@ -12,7 +12,7 @@ public struct ApiDataNetworkConfig {
     public let apiKey: String
     
     public init() {
-        self.baseURL =  URL(string: "https://api.openweathermap.org/data/2.5/forecast")!
+        self.baseURL =  URL(string: "https://api.openweathermap.org/data/2.5/")!
         self.apiKey = "ae3168e67930a9e6e43cf4493e961348"
     }
 }

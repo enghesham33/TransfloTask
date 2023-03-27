@@ -12,6 +12,6 @@ import SwinjectAutoregistration
 extension Container {
     
     func registerViewModels() {
-//        autoregister(AuthViewModel.self, initializer: AuthViewModel.init)
+        autoregister(DashboardViewModel.self, initializer: DashboardViewModel.init)
     }
 }

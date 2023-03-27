@@ -37,4 +37,16 @@ class Helper {
         )
         return SheetViewController(controller: vc, sizes: sizes, options: options)
     }
+    
+    class func convertTimeStampToString(timeStamp: Double, format: String) -> String {
+        let date = Date(timeIntervalSince1970: timeStamp)
+        let dateFormatter = DateFormatter()
+        
+        dateFormatter.dateFormat = format
+        return dateFormatter.string(from: date)
+    }
+    
+    class func convertTimeStampToDate(timeStamp: Double, format: String) -> Date {
+        return Date(timeIntervalSince1970: timeStamp)
+    }
 }

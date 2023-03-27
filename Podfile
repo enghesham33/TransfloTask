@@ -18,6 +18,7 @@ target 'WeatherApp' do
   pod 'RealmSwift', '10.33.0'
   pod 'FittedSheets', '2.5.3'
   pod 'SnapKit', '5.6.0'
+  pod 'Toast-Swift', '5.0.1'
   
   target 'WeatherAppTests' do
     inherit! :search_paths

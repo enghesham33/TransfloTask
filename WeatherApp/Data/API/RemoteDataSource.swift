@@ -11,15 +11,11 @@ import Alamofire
 // MARK: - Remote Data Source
 class RemoteDataSource {
     
-    func sendRequest<T: Codable>(_ request: URLRequest, param: [String : Any], completion: @escaping(Result<T>) -> Void) where T: Decodable {
-        
-        AF.request(request.url!.absoluteString, method: request.method!, parameters: param , headers: request.headers).responseDecodable(of: T.self) { [weak self] (response) in
-            
-            //MARK: - Print request and response details
-            self?.debuggingResponse(data: response.data, response: response.response)
-            
+    func sendRequest(_ request: URLRequest, param: [String : Any], completion: @escaping(Result<Data>) -> Void) {
+        AF.request(request).responseString { response in
             switch response.result {
-            case .success(let data):
+            case .success(let responseString):
+                let data = Data(responseString.utf8)
                 completion(.success(data: data))
                 
             case .failure(_):

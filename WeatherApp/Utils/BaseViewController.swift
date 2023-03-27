@@ -7,6 +7,7 @@
 
 import UIKit
 import RxSwift
+import Toast_Swift
 
 class BaseViewController: UIViewController {
         
@@ -19,6 +20,10 @@ class BaseViewController: UIViewController {
         super.viewWillAppear(animated)
         navigationController?.setStatusBar(backgroundColor: UIColor.backgroundColor())
         UIApplication.shared.statusBarStyle = .darkContent
+    }
+    
+    func showErrorMessage(message: String?) {
+        self.view.makeToast(message)
     }
     
 }
